@@ -26,7 +26,7 @@ if ($sql->num_rows>0) {
     $quandity = $row['quandity'];
 
 
-    $myarray['total'] = $price*$quandity;
+    $myarray['total'] = intVal( $price)*intVal($quandity);
 
     array_push($list, $myarray);
   
